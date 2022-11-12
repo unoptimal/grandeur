@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
 body {
     padding: 0;
     margin: 0;
@@ -28,7 +34,6 @@ nav{
     margin-right: 0.5rem;
 }
 
-/* align the paragraph with the image and navbar*/
 .brand p{
     display: inline-block;
     margin-top: 0.5rem;
@@ -107,62 +112,24 @@ nav{
     
   }
 
-  .unis{
-    display: flex;
-    margin-right: 200px;
-    margin-left: 200px;
-    margin-top: 20px;
-    
+
+  .school{
+    background-color: black;
+    padding: 4px;
+
+  }
+  @media (min-width:600px){
+    .school{
+        width: 50%;
+        height: 50%;
+        margin-right: 16px;
     }
-
-  .row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
+    .unis{
+        display: flex;
+      }
   }
 
-  .column {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-  }
-  .princeton{
-    width: 100%;
-    height: 100%;
-    margin-top: 20%;
-    margin-bottom: 20%;
-  }
-  .princeton img{
-    display: block;
-  }
   
-  .columbia {
-    background-color: blue;
-    height: 100px;
-  }
-    
-  .dartmouth {
-    background-color: green;
-    height: 100px;
-  }
-  
-  .stanford {
-    background-color: red;
-    height: 100px;
-  }
-
-  .nyu {
-    background-color: purple;
-    height: 100px;
-  }
-
-.column img{
-    margin: 0 auto;
-    width: 40%;
-    height: 40%;
-}
 
 .features-box{
     display: flex;
@@ -180,29 +147,21 @@ nav{
     height: 100%;
   }
 
+  
   .testimonials{
-    display: flex;
-    margin-right: 200px;
-    margin-left: 200px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    
+    background-color: blue;
+    padding: 4px;
+
+  }
+  @media (min-width:600px){
+    .testimonial{
+        margin-right: 16px;
     }
-
-  .testimonial-row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-between;
+    .testimonial{
+        display: flex;
+      }
   }
 
-  .testimonials-column {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-  }
   
 #end-cta{
     height: 100%;
@@ -243,4 +202,4 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
