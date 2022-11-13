@@ -78,7 +78,7 @@ export default function Index() {
             </div>
             <div className='bg-amber-400 visible md:hidden px-10 py-10'>
                     <h1 className='text-6xl font-bold text-white'>Your ticket to a better life</h1>
-                    <h3  className='text-lg py-2 font-bold text-white'>Powerful tools, experiences, and environments to help you find your life direction at age 20.</h3>
+                    <h3  className='text-lg py-2 font-bold text-white'>Powerful tools, REEEE, and environments to help you find your life direction at age 20.</h3>
                     <div className="">
                         <button className="mr-5 my-2 bg-amber-500  text-white hover:bg-yellow-400 font-bold py-2 px-4 rounded">Sign up</button>
                         <button className="bg-amber-500  text-white hover:bg-yellow-400 font-bold py-2 px-4 rounded">Learn more</button>
