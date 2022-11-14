@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Navbar from "../components/Navbar";
 
 export default function Contact(){
     return(
@@ -7,69 +8,30 @@ export default function Contact(){
             <title>Grandeur Contact Sales | Your ticket to a better life</title>
             <meta name='description' content='If college was a SAAS app - the contact page.'/>
         </Head>
-
-        <nav className="zoom:0.9 mb-0 bg-amber-400 hidden md:block">
-                <div className="container flex flex-wrap justify-between items-center mx-auto px-10">
-                    <a href="/#" className="flex items-center">
-                        <img src="\img\caltech.png" className="mr-3 h-6 sm:h-10" alt="grandeur logo" />
-                        <span className="self-center text-xl font-semibold whitespace-nowrap text-white">grandeur</span>
-                    </a>
-                <div className="hidden w-full md:block md:w-auto" id="mobile-menu">
-                    <ul className="flex flex-col p-4 mt-4 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                        
-                        <li>
-                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" className="flex justify-between items-center py-2 pr-4 pl-3 w-full font-medium text-lg text-white 
-                            rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:font-bold md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 
-                            dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Product <svg className="ml-1 w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" 
-                            xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" 
-                            clip-rule="evenodd"></path></svg></button>
-                            
-                            <div id="dropdownNavbar" className="hidden z-10 w-44 font-normal rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600">
-                                <ul className="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
-                                <li>
-                                    <a href="#" className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
-                                </li>
-                                <li>
-                                    <a href="#" className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
-                                </li>
-                                <li>
-                                    <a href="#" className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
-                                </li>
-                                </ul>
-                                <div className="py-1">
-                                <a href="#" className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Sign out</a>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <a href="/pricing" className="block py-2 pr-4 pl-3 text-lg text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:font-bold md:p-0 
-                            dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
-                        </li>
-                        <li>
-                            <a href="/contact" className="block py-2 pr-4 pl-3 text-lg text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:font-bold md:p-0 
-                            dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact Sales</a>
-                        </li>
-
-
-                    </ul>
-                </div>
-
-                <div className="hidden w-full md:block md:w-auto" id="mobile-menu">
-                <ul className="flex flex-col p-4 mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                    <li>
-                    <a href="#" className="block py-2 pr-4 pl-3 text-lg text-white rounded md:hover:font-bold md:hover:bg-transparent md:border-0 
-                    d:p-0 dark:text-black md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Log in</a>
-                    </li>
-                    <li>
-                        <a href="#"><button className="bg-amber-500 text-white hover:bg-yellow-400 font-bold py-2 px-4 rounded">Sign up</button></a>
-                    </li>
-
-
-                </ul>
-                </div>
+        <Navbar/>
+            <section className="bg-amber-50 dark:bg-gray-900">
+            <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+                <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
+                
+                <form action="#" className="space-y-8">
+                    <div>
+                        <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+                        <input type="email" id="email" className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" required/>
+                    </div>
+                    <div>
+                        <label htmlFor="subject" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
+                        <input type="text" id="subject" className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you." required/>
+                    </div>
+                    <div className="sm:col-span-2">
+                        <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
+                        <textarea id="message" rows={6} className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+                    </div>
+                    <button type="submit" className="bg-amber-300 hover:bg-yellow-400 text-black text-large font-bold sm: py-4 px-8 rounded">Send message</button>
+                </form>
             </div>
-            </nav>
+            </section>
+
+
 
             <div className='bg-amber-400 py-10'>
             <div className="text-center">

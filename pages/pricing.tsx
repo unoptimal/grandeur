@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Navbar from "../components/Navbar";
 
 export default function Pricing(){
     return(
@@ -8,68 +9,7 @@ export default function Pricing(){
             <meta name='description' content='If college was a SAAS app - the pricing page.'/>
         </Head>
 
-        <nav className="zoom:0.9 mb-0 bg-amber-400 hidden md:block">
-                <div className="container flex flex-wrap justify-between items-center mx-auto px-10">
-                    <a href="/#" className="flex items-center">
-                        <img src="\img\caltech.png" className="mr-3 h-6 sm:h-10" alt="grandeur logo" />
-                        <span className="self-center text-xl font-semibold whitespace-nowrap text-white">grandeur</span>
-                    </a>
-                <div className="hidden w-full md:block md:w-auto" id="mobile-menu">
-                    <ul className="flex flex-col p-4 mt-4 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                        
-                        <li>
-                            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" className="flex justify-between items-center py-2 pr-4 pl-3 w-full font-medium text-lg text-white 
-                            rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:font-bold md:p-0 md:w-auto dark:text-gray-400 dark:hover:text-white dark:focus:text-white dark:border-gray-700 
-                            dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Product <svg className="ml-1 w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" 
-                            xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" 
-                            clip-rule="evenodd"></path></svg></button>
-                            
-                            <div id="dropdownNavbar" className="hidden z-10 w-44 font-normal rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600">
-                                <ul className="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
-                                <li>
-                                    <a href="#" className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
-                                </li>
-                                <li>
-                                    <a href="#" className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
-                                </li>
-                                <li>
-                                    <a href="#" className="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
-                                </li>
-                                </ul>
-                                <div className="py-1">
-                                <a href="#" className="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Sign out</a>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <a href="/pricing" className="block py-2 pr-4 pl-3 text-lg text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:font-bold md:p-0 
-                            dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
-                        </li>
-                        <li>
-                            <a href="/contact" className="block py-2 pr-4 pl-3 text-lg text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:font-bold md:p-0 
-                            dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact Sales</a>
-                        </li>
-
-
-                    </ul>
-                </div>
-
-                <div className="hidden w-full md:block md:w-auto" id="mobile-menu">
-                <ul className="flex flex-col p-4 mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                    <li>
-                    <a href="#" className="block py-2 pr-4 pl-3 text-lg text-white rounded md:hover:font-bold md:hover:bg-transparent md:border-0 
-                    d:p-0 dark:text-black md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Log in</a>
-                    </li>
-                    <li>
-                        <a href="#"><button className="bg-amber-500 text-white hover:bg-yellow-400 font-bold py-2 px-4 rounded">Sign up</button></a>
-                    </li>
-
-
-                </ul>
-                </div>
-            </div>
-            </nav>
+       <Navbar/>
 
             <div className="bg-amber-50 py-10">
                 <h1 className="font-bold text-6xl text-center">Choose the perfect plan for you.</h1>    
@@ -82,18 +22,18 @@ export default function Pricing(){
                         <div className="px-6 py-8 sm:p-10 sm:pb-6">
                             <div className="flex justify-center">
                                 <span className="inline-flex px-4 py-1 rounded-full text-sm leading-5 font-semibold tracking-wide uppercase">
-                                    Basic
+                                    Undergraduate Degree
                                 </span>
                             </div>
                             <div className="mt-4 flex justify-center text-6xl leading-none font-extrabold">
-                                $10
+                                $3,000
                                 <span className="ml-1 pt-8 text-2xl leading-8 font-medium text-gray-500">
                                     /month
                                 </span>
                             </div>
                         </div>
                         <p className="text-md mt-4">
-                            Plan include :
+                            Plan includes:
                         </p>
                         <ul className="text-sm w-full mt-6 mb-6">
                             <li className="mb-3 flex items-center ">
@@ -101,7 +41,7 @@ export default function Pricing(){
                                     <path d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z">
                                     </path>
                                 </svg>
-                                All illimited components
+                                Free lecture slides
                             </li>
                             <li className="mb-3 flex items-center ">
                                 <svg className="h-6 w-6 mr-2" xmlns="http://www.w3.org/2000/svg" width="6" height="6" stroke="currentColor" fill="green" viewBox="0 0 1792 1792">
@@ -155,18 +95,18 @@ export default function Pricing(){
                         <div className="px-6 py-8 sm:p-10 sm:pb-6">
                             <div className="flex justify-center">
                                 <span className="inline-flex px-4 py-1 rounded-full text-sm leading-5 font-semibold tracking-wide uppercase">
-                                    Popular
+                                    Graduate degree
                                 </span>
                             </div>
                             <div className="mt-4 flex justify-center text-6xl leading-none font-extrabold">
-                                $30
+                                $8,000
                                 <span className="ml-1 pt-8 text-2xl leading-8 font-medium text-gray-100">
                                     /month
                                 </span>
                             </div>
                         </div>
                         <p className="text-md mt-4">
-                            Plan include :
+                            Plan includes:
                         </p>
                         <ul className="text-sm w-full mt-6 mb-6">
                             <li className="mb-3 flex items-center ">
@@ -224,7 +164,7 @@ export default function Pricing(){
                         </button>
                     </div>
        
-            
+            </div>
                 <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
                     <h2 className="mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Frequently asked questions</h2>
                     <div className="grid pt-8 text-left border-t border-gray-200 md:gap-16 dark:border-gray-700 items-center">
@@ -234,21 +174,21 @@ export default function Pricing(){
                                     <svg className="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
                                     How does your pricing work?
                                 </h3>
-                                <p className="text-gray-500 dark:text-gray-400">Our pricing is based on two variables: tuition, room, board, transportation, miscellaneous expenses, and the weather. </p>
+                                <p className="text-gray-500 dark:text-gray-400">Our pricing is based on tuition, room, board, books, transportation, mandatory fees, and additional estimated miscellaneous expenses. </p>
                             </div>
                             <div className="mb-10">                        
                                 <h3 className="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
                                     <svg className="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
                                     Do you offer any discounted plans?
                                 </h3>
-                                <p className="text-gray-500 dark:text-gray-400">Yes, sometimes.</p>
+                                <p className="text-gray-500 dark:text-gray-400">Yes, on a need-based criteria. <a href='https://studentaid.gov/h/apply-for-aid/fafsa' className="text-blue-500">Contact sales</a> to determine your eligibility.</p>
                             </div>
                             <div className="mb-10">
                                 <h3 className="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
                                     <svg className="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
                                     Can I cancel my plan later on?
                                 </h3>
-                                <p className="text-gray-500 dark:text-gray-400">If you ever decide that Grandeur isn’t the best resource for your goals, you are allowed to cancel your account.</p>
+                                <p className="text-gray-500 dark:text-gray-400">After paying your initial deposit, you are allowed to cancel your Grandeur plan at any time.</p>
                             </div>
                             <div className="mb-10">
                                 <h3 className="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
@@ -263,7 +203,7 @@ export default function Pricing(){
                 </div>
     
             </div>
-        </div>
+        
 
         <div className='bg-amber-400 py-10'>
             <div className="text-center">
