@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { useState } from 'react';
 
 
@@ -31,9 +30,20 @@ export default function Navbar() {
     urls[23] = "https://www.usc.edu/";
     urls[24] = "https://www.umich.edu/";
     urls[25] = "https://www.georgetown.edu/";
+
+  const apply = new Array();
+    apply[0] = "https://www.commonapp.org/";
+    apply[1] = "https://www.coalitionforcollegeaccess.org/";
+    apply[2] = "https://www.questbridge.org/";
+    apply[4] = "https://apply.universityofcalifornia.edu/my-application/login";
+
 function randLink(){
     return urls[Math.floor(Math.random() * urls.length)];
 }
+
+  function randApplyLink(){
+    return apply[Math.floor(Math.random() * apply.length)];
+  }
 
   return (
     <div>
@@ -95,31 +105,31 @@ function randLink(){
             >
               <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                 <li className="block py-2 pr-4 pl-3 text-lg text-white rounded font-bold hover:underline">
-                  <Link href={randLink()}>
-                    <a>Product</a>
-                  </Link>
+                  <a href={randLink()}>
+                    Product
+                  </a>
                 </li>
                 <li className="block py-2 pr-4 pl-3 text-lg text-white rounded font-bold hover:underline">
-                  <Link href="/pricing">
-                    <a>Pricing</a>
-                  </Link>
+                  <a href="/pricing">
+                    Pricing
+                  </a>
                 </li>
                 <li className="block py-2 pr-4 pl-3 text-lg text-white rounded font-bold hover:underline">
-                  <Link href="/contact">
-                    <a>Contact Sales</a>
-                  </Link>
+                  <a href="/contact">
+                    Contact Sales
+                  </a>
                 </li>
                 <li className="block py-2 pr-4 pl-3 text-lg text-white rounded font-bold hover:underline">
-                  <Link href="/">
-                    <a>Log in</a>
-                  </Link>
+                  <a href={randApplyLink()}>
+                    Log in
+                  </a>
                 </li>
                 <li className="block py-2 pr-4 pl-3 text-lg text-white roundedunderline">
-                  <Link href="/">
+                  <a href={randApplyLink()}>
                     <button className="bg-amber-500 text-white hover:bg-yellow-400 py-2 px-4 rounded font-bold">
-                        <a>Sign up</a>
+                        Sign up
                     </button>
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>

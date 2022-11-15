@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Navbar from "../components/Navbar";
+import End from "../components/End";
+import Footer from "../components/Footer";
 
 export default function Contact(){
     return(
@@ -32,15 +34,9 @@ export default function Contact(){
             </section>
 
 
-
-            <div className='bg-amber-400 py-10'>
-            <div className="text-center">
-                    <h1 className="mx-10 mb-5 text-2xl md:text-3xl sm:text-2xlfont-bold text-black">Join over 220 million <br/>existentially confused 19 year olds.</h1>
-                    <div className="py-5">
-                        <button className="bg-amber-500 hover:bg-yellow-400 text-white text-large font-bold sm: py-4 px-8 rounded">Sign up</button>
-                    </div>
-            </div>
-        </div>   
+            <End/>
+            <Footer/>
+        
         </>
     )
 }
