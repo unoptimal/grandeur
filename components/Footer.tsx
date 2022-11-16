@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function Navbar() {
+export default function Footer() {
 
 	return (
         <footer className="bg-amber-50">

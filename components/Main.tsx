@@ -10,7 +10,6 @@ export default function Main(){
     function randApplyLink(){
         return apply[Math.floor(Math.random() * apply.length)];
       }
-      
     return (
         <>
              <div className="grid grid-cols-1 md:grid-cols-2 px-8 md:py-5 bg-amber-400">
