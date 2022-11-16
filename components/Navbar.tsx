@@ -1,10 +1,10 @@
 import { useState } from 'react';
 
-
 export default function Navbar() {
   const [navbar, setNavbar] = useState(false);
+  const [style, setStyle] = useState({display: 'none'});
 
-  const urls = new Array();
+    const urls = new Array();
     urls[0] = "https://www.princeton.edu/";
     urls[1] = "https://www.mit.edu/";
     urls[2] = "https://www.harvard.edu/";
@@ -46,17 +46,20 @@ function randLink(){
   }
 
   return (
+
+    
     <div>
-      
+    
+
+
       <nav className="w-full bg-amber-400 shadow">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
               <a href="/">
-                <div className='flex items-center'>
-                    <img src="\img\caltech.png" className="mr-3 h-6 sm:h-10" alt="grandeur logo"/>
+                <div className=' flex items-center'>
+                    <img src='\img\caltech.png' className="mr-3 h-6 sm:h-10" alt="grandeur logo" id='logo'/>
                     <h2 className="text-xl text-white font-bold">grandeur</h2>
-                    
                 </div>                
               </a>
               <div className="md:hidden">
