@@ -106,12 +106,13 @@ export default function Index() {
         <>
         <Head>
             <title>Grandeur | Your ticket to a better life</title>
-            <meta name='description' content='If college was a SAAS app.'/>
+            <meta name='description' content='If college was a SAAS product.'/>
+            <link rel="icon" type="image/png" sizes="40x40" href="\img\better.png"></link>
         </Head>
         
            <Navbar/>
            <Main/>
-           <div className='bg-amber-50'>
+           <div className='bg-light-navy -mt-20'>
            <Banner/>
             
         <div className="grid grid-cols-1 md:grid-cols-2 px-8">
@@ -119,9 +120,9 @@ export default function Index() {
                 <img src="\img\class.jpg " alt="" className='' object-right/>
             </div>
             <div className="my-8 mx-8 lg:mt-5">
-                <h1 className='my-5 font-bold text-3xl md:text-5xl'>A world-class education, tailored to your needs</h1>
-                <p className='my-5 mr-8 text-base md:text-2xl'>Take mandatory general education classes and watch professors read off lecture slides, or review course material remotely. We also offer amazing research opportunities.</p>
-                <a href={randAcademicsLink()}><button className="bg-amber-400 hover:bg-amber-500 text-white text-xl font-bold sm: py-4 px-8 rounded">Learn more</button></a>
+                <h1 className='my-5 font-bold text-3xl md:text-5xl text-beige'>A world-class education, tailored to your needs</h1>
+                <p className='my-5 mr-8 text-base md:text-2xl text-beige'>Take mandatory general education classes and watch professors read off lecture slides, or review course material remotely. We also offer amazing research opportunities.</p>
+                <a href={randAcademicsLink()}><button className="bg-gold hover:underline text-navy text-xl font-bold sm: py-4 px-8 rounded">Learn more</button></a>
             </div>
         </div>
 
@@ -133,9 +134,9 @@ export default function Index() {
      
             
             <div className="my-8 mx-8 lg:mt-5">
-                <h1 className='my-5 font-bold text-3xl md:text-6xl'>An exclusive social scene for the ages</h1>
-                <p className='my-5 text-base md:text-2xl'>Join our inclusive and diverse community. Surround yourself with the shroud of ambitious overachievers. Find your future spouse during your first term. Participate in one or two clubs.</p>
-                <a href={randLifeLink()}><button className="bg-amber-400 hover:bg-amber-500 text-white text-xl font-bold sm: py-4 px-8 rounded">Learn more</button></a>
+                <h1 className='my-5 font-bold text-3xl md:text-6xl text-beige'>An exclusive social scene for the ages</h1>
+                <p className='my-5 text-base md:text-2xl text-beige'>Join our inclusive and diverse community. Surround yourself with the shroud of ambitious overachievers. Find your future spouse during your first term. Participate in one or two clubs.</p>
+                <a href={randLifeLink()}><button className="bg-gold hover:underline text-navy text-xl font-bold sm: py-4 px-8 rounded">Learn more</button></a>
             </div>
             <div className="my-8 mx-8 md: mb-0 hidden md:block">
                 <img src="\img\night.jpg " alt="" className='' object-right/>
@@ -148,14 +149,14 @@ export default function Index() {
                 <img src="\img\happy.jpg " alt="" className='' object-right/>
             </div>    
             <div className="my-8 mx-8 lg:mt-5">
-                <h1 className='my-5 font-bold text-3xl md:text-6xl'>Extensive preparation for the workforce</h1>
-                <p className='my-5 text-base md:text-2xl'>Signal to employers that you are the best fit for that dream job. On top of a great alumni network, you also get to add a sweet new line to your Instagram and Linkedin bios.</p>
-                <a href={randCareerLink()}><button className="bg-amber-400 hover:bg-amber-500 text-white text-xl font-bold sm: py-4 px-8 rounded">Learn more</button></a>
+                <h1 className='my-5 font-bold text-3xl md:text-6xl text-beige'>Extensive preparation for the workforce</h1>
+                <p className='my-5 text-base md:text-2xl text-beige'>Signal to employers that you are the best fit for that dream job. On top of a great alumni network, you also get to add a sweet new line to your Instagram and Linkedin bios.</p>
+                <a href={randCareerLink()}><button className="bg-gold hover:underline text-navy text-xl font-bold sm: py-4 px-8 rounded">Learn more</button></a>
             </div>
         </div>
 
             </div>       
-        <div className="bg-amber-50">
+        <div className="bg-light-navy">
             <Testimonials/>
         </div>
         <End/>

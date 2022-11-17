@@ -12,15 +12,15 @@ export default function Main(){
       }
     return (
         <>
-             <div className="grid grid-cols-1 md:grid-cols-2 px-8 md:py-5 bg-amber-400">
+             <div className="grid grid-cols-1 md:grid-cols-2 px-8 md:py-5 bg-navy">
             <div className="my-8 mx-8 lg:mt-5">
-                <h1 className='mt-0 font-bold text-4xl md:my-5 md:text-8xl text-white md:mb-10'>Your ticket to a better life</h1>
-                <p className='my-5 text-base text-white font-bold md:text-3xl md:mb-10'>Powerful tools, experiences, and environments to help you find your life direction at age 20.</p>
-                <a href={randApplyLink()}><button className="bg-amber-500 hover:bg-yellow-400 text-white text-2xl font-bold sm: py-4 px-8 rounded md:my-5">Sign up</button></a>
+                <h1 className='mt-0 font-bold text-4xl md:my-5 md:text-8xl text-beige md:mb-10'>Your ticket to a better life</h1>
+                <p className='my-5 text-base text-beige font-bold md:text-3xl md:mb-10'>Powerful tools, experiences, and environments to help you find your life direction at age 20.</p>
+                <a href={randApplyLink()}><button className="bg-gold hover:underline text-navy py-2 md:text-2xl font-bold md:py-4 px-8 rounded md:my-5">Sign up</button></a>
             </div>
 
             <div className="hidden md:block">
-                <img src="\img\OUTLINE.png" className='-mt-10 scale-90' alt="" />
+                <img src="\img\side.png" className='-mt-10' alt="" />
             </div>
         </div>
 

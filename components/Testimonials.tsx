@@ -8,7 +8,7 @@ export default function Testimonials(){
                         <h1 className="text-4xl md:text-6xl font-bold mb-5 text-black">What people <br />are saying.</h1>
                         
                         <div className="text-center mb-10">
-                            <span className="inline-block w-40 h-1 rounded-full bg-amber-400"></span>
+                            <span className="inline-block w-40 h-1 rounded-full bg-gold"></span>
                         </div>
                     </div>
                     <div className="-mx-3 md:flex items-start">

@@ -11,11 +11,11 @@ export default function End(){
     return(
         <>
                     
-        <div className='bg-amber-400 py-10'>
+        <div className='bg-light-navy py-10'>
             <div className="text-center">
-                    <h1 className="mx-10 mb-5 text-2xl md:text-3xl sm:text-2xlfont-bold text-black">Join over 220 million <br/>existentially confused 19 year olds.</h1>
+                    <h1 className="mx-10 mb-5 text-2xl md:text-3xl sm:text-2xlfont-bold text-beige">Join over 220 million <br/>existentially confused 19 year olds.</h1>
                     <div className="py-5">
-                        <a href={randApplyLink()}><button className="bg-amber-500 hover:bg-yellow-400 text-white text-large font-bold sm: py-4 px-8 rounded">Sign up</button></a>
+                        <a href={randApplyLink()}><button className="bg-gold hover:bg-yellow-400 text-navy text-large font-bold sm: py-4 px-8 rounded">Sign up</button></a>
                     </div>
             </div>
         </div>    
