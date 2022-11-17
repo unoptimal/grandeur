@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer"
 import End from '../components/End'
+import Footer from "../components/Footer"
 
 export default function Pricing(){
     return(
@@ -10,7 +10,6 @@ export default function Pricing(){
             <title>Grandeur Pricing | Your ticket to a better life</title>
             <meta name='description' content='If college was a SAAS app - the pricing page.'/>
         </Head>
-
        <Navbar/>
 
             <div className="bg-amber-50 py-10">
@@ -138,7 +137,7 @@ export default function Pricing(){
                                     <svg className="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
                                     How does your pricing work?
                                 </h3>
-                                <p className="text-gray-500 dark:text-gray-400">Our pricing is based on tuition, room, board, transportation, mandatory fees, and additional estimated miscellaneous expenses. </p>
+                                <p className="text-gray-500 dark:text-gray-400">Our pricing is based on tuition, room, board, transportation, mandatory fees, and <a href='https://admission.princeton.edu/cost-aid/fees-payment-options#:~:text=Estimated%20miscellaneous%20expenses%3A%20%243%2C500' className="text-blue-500">estimated miscellaneous expenses</a>. </p>
                             </div>
                             <div className="mb-10">                        
                                 <h3 className="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white">
