@@ -20,7 +20,7 @@ export default function Main(){
             </div>
 
             <div className="hidden md:block">
-                <img src="\img\side.png" className='-mt-10' alt="" />
+                <img src="\img\side.png" className='' alt="" />
             </div>
         </div>
 

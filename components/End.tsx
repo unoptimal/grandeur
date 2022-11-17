@@ -11,7 +11,7 @@ export default function End(){
     return(
         <>
                     
-        <div className='bg-light-navy py-10'>
+        <div className='bg-light-navy py-5'>
             <div className="text-center">
                     <h1 className="mx-10 mb-5 text-2xl md:text-3xl sm:text-2xlfont-bold text-beige">Join over 220 million <br/>existentially confused 19 year olds.</h1>
                     <div className="py-5">

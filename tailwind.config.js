@@ -13,7 +13,7 @@ module.exports = {
         'gold': '#fcc743',
         'white': '#ffffff',
         'beige': '#e6e0d0',
-        'light-navy': '#1E3B5A'
+        'light-navy': '#4A4763'
       },
     },
     
