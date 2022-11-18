@@ -9,7 +9,7 @@ export default function Footer() {
                 <h2 className="mb-6 text-sm font-semibold text-beige uppercase">Company</h2>
                 <ul className="text-beige">
                     <li className="mb-4">
-                        <a href="/" className=" hover:underline">About</a>
+                        <a href="https://www.youtube.com/watch?v=kIpOuMnGpt4" className=" hover:underline">About</a>
                     </li>
                     
                     <li className="mb-4">
