@@ -4,7 +4,7 @@ export default function Banner(){
         <div>
                 <div className='grid grid-cols-5 md:-mt-8 md:-mb-8'>
                     <img src="\img\columbia.png" alt="" className="md:my-5 object-scale-down scale-50 h-48 w-96"/>
-                    <img src="\img\nu.png" alt="" className="md:my-5 object-scale-down scale-50 h-48 w-96"/>
+                    <img src="\img\caltech.png" alt="" className="md:my-5 object-scale-down scale-50 h-48 w-96"/>
                     <img src="\img\saas.png" alt="" className="md:my-5 object-scale-down scale-50 h-48 w-96"/>
                     <img src="\img\dartmouth.png" alt="" className="md:my-5 object-scale-down scale-50 h-48 w-96"/>
                     <img src="\img\yale.png" alt="" className="md:my-5 object-scale-down scale-50  h-48 w-96"/>

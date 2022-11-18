@@ -12,7 +12,7 @@ export default function Main(){
       }
     return (
         <>
-             <div className="grid grid-cols-1 md:grid-cols-2 px-8 md:py-5 bg-navy">
+             <div className="grid grid-cols-1 md:grid-cols-2 px-8 pb-20 md:pt-5 lg:py-5 bg-navy">
             <div className="my-8 mx-8 lg:mt-5">
                 <h1 className='mt-0 font-bold text-4xl md:my-5 md:text-8xl text-beige md:mb-10'>Your ticket to a better life</h1>
                 <p className='my-5 text-base text-beige font-bold md:text-3xl md:mb-10'>Powerful tools, experiences, and environments to help you find your life direction at age 20.</p>
