@@ -81,7 +81,7 @@ export default function Pricing(){
                                 </span>
                             </div>
                             <div className="mt-4 flex justify-center text-6xl leading-none font-extrabold text-navy">
-                                $5,000
+                                $9,000
                                 <span className="ml-1 pt-8 text-2xl leading-8 font-medium text-navy">
                                     /month
                                 </span>
@@ -121,7 +121,7 @@ export default function Pricing(){
                                 A second official piece of paper
                             </li>
                         </ul>
-                        <a href='https://educationdata.org/average-cost-of-college' target='blank'><button type="button" className="w-full px-3 py-3 text-sm shadow rounded-lg text-amber-500 hover:underline">
+                        <a href='https://educationdata.org/average-cost-of-a-masters-degree' target='blank'><button type="button" className="w-full px-3 py-3 text-sm shadow rounded-lg text-amber-500 hover:underline">
                             Continue
                         </button></a>
                     </div>
